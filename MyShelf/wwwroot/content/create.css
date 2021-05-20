@@ -1,0 +1,163 @@
+﻿/* Create book container */
+div.create-book-global-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+div.create-book-global-container div.create-book-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+div.create-book-container div.create-book-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 3%;
+    padding: 0;
+    min-height: 10vh;
+}
+
+div.create-book-header-container div.create-book-title-back {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+div.create-book-title-back h3.title {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+div.create-book-title-back a.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 65%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Input form container */
+div.create-book-container div.form-container {
+    margin: 0 auto;
+    padding: 0%;
+    width: 90%;
+}
+
+div.form-container form.form {
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+}
+
+/* Input fields */
+form.form div.form-group div.book-title,
+div.book-author, div.book-genre, div.book-price,
+div.book-cover-img, div.book-synopsis{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.book-title label.title, label.author,
+label.genre, label.price, label.cover-img, 
+label.synopsis{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: rgb(255, 255, 255);
+}
+
+form.form div.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.btn-container div.button {
+    margin: 2%;
+    width: 90%;
+}
+
+div.btn-container div.button input.btn-success {
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+div.btn-container div.button input.btn-danger {
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+/* Media queries */
+@media only screen and (min-width: 576px) {
+    /* Home */
+    div.create-book-title-back a.btn {
+        width: 30%;
+    }
+
+    div.btn-container div.button {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Home */
+    div.create-book-header-container div.create-book-title-back {
+        padding: 0;
+    }
+
+    div.create-book-title-back a.btn {
+        width: 25%;
+    }
+
+    div.create-book-container div.form-container {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Home */
+    div.create-book-container div.form-container {
+        width: 90%;
+    }
+
+    div.btn-container div.button {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Home */
+    div.create-book-title-back a.btn {
+        width: 20%;
+    }
+
+    div.create-book-container div.form-container {
+        width: 70%;
+    }
+}

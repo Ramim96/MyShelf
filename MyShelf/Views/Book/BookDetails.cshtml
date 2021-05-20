@@ -1,0 +1,45 @@
+﻿@model Book 
+
+@{
+    ViewData["Title"] = "Book details";
+}
+
+@* Book details container *@
+<div class="book-details-container col-sm-12">
+    @* Book title *@
+    <div class="title-container col-sm-12">
+        <p class="title">@Model.Title</p>
+    </div>
+
+    <div class="details-box col-sm-12 col-md-10">
+        @* Box 1 *@
+        <div class="col-sm-12 col-md-4 p-0">
+            @* Book author *@
+            <div class="detail-container col-sm-12">
+                <p class="detail-label text-primary">Author:</p>
+                <p class="detail">@Model.Author</p>
+            </div>
+
+            @* Book genre *@
+            <div class="detail-container col-sm-12">
+                <p class="detail-label text-primary">Genre:</p>
+                <p class="detail">@Model.Genre</p>
+            </div>
+
+            @* Book price *@
+            <div class="detail-container col-sm-12">
+                <p class="detail-label text-primary">Price:</p>
+                <p class="detail">@Model.Price</p>
+            </div>
+        </div>
+
+        @* Box 2 *@
+        <div class="col-sm-12 col-md-8 p-0">
+            @* Book synopsis *@
+            <div class="detail-container col-sm-12">
+                <p class="detail-label text-primary">Synopsis:</p>
+                <p class="detail">@Model.Synopsis</p>
+            </div>
+        </div>
+    </div>
+</div>

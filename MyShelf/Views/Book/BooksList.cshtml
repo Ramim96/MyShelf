@@ -1,0 +1,43 @@
+﻿@model BooksListViewModel
+@{
+    ViewData["Title"] = "Books";
+} 
+
+<div class="books-list-container row">
+    <div class="books-list col-sm-12 col-md-10 offset-1">
+        @* Header container *@
+        <div class="header-container row">
+            @* Header text *@
+            <div class="col-6 d-flex justify-content-start align-items-center">
+                <p class="books-list-title">Books list</p>
+            </div>
+
+            @* Header add book button *@
+            <div class="col-6 d-flex justify-content-end align-content-center">
+                <a class="btn btn-primary text-white" asp-controller="Book" asp-action="CreateBook">
+                    <i class="fas fa-plus-square mx-2"></i> Add Book
+                </a>
+            </div>
+        </div>
+
+        @* Books list container *@
+    <div class="books row border-light rounded">
+        @if (Model.AllBooks.Count() > 0 || Model.AllBooks != null)
+        {
+            @foreach (var book in Model.AllBooks)
+            {
+                @* Book card partial *@
+                <partial name="_BookCard" model="book" />
+            }
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-12 d-flex justify-content-start align-items-center mx-0 my-3 p-0">
+                    <h3 class="d-flex justify-content-start align-items-center">No books in the shelf</h3>
+                </div>
+            </div>
+        }
+    </div>
+    </div>
+</div>

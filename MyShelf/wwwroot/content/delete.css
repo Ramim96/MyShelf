@@ -1,0 +1,137 @@
+﻿/* Delete book container */
+div.delete-book-global-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+div.delete-book-global-container div.delete-book-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+div.delete-book-container div.delete-book-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 3%;
+    padding: 0;
+}
+
+div.delete-book-header-container div.delete-book-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div.delete-book-title h3.title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+/* Input form container */
+div.delete-book-container div.form-container {
+    margin: 0 auto;
+    padding: 0%;
+    width: 90%;
+}
+
+div.form-container form.form {
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 10px;
+    background-color: rgb(27, 40, 69);
+}
+
+/* Input fields */
+form.form div.form-group div.book-title,
+div.book-author, div.book-genre, div.book-price,
+div.book-cover-img, div.book-synopsis {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.book-title label.title, label.author,
+label.genre, label.price, label.cover-img,
+label.synopsis {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: rgb(255, 255, 255);
+}
+
+form.form div.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.btn-container div.button {
+    margin: 2%;
+    width: 90%;
+}
+
+div.btn-container div.button input.btn-primary {
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+div.btn-container div.button a.btn-danger {
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+/* Media queries */
+@media only screen and (min-width: 576px) {
+    /* Home */
+    div.btn-container div.button {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Home */
+    div.delete-book-container div.form-container {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Home */
+    div.delete-book-container div.form-container {
+        width: 90%;
+    }
+
+    div.btn-container div.button {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Home */
+    div.delete-book-container div.form-container {
+        width: 70%;
+    }
+}

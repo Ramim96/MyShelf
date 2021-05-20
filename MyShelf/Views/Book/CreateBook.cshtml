@@ -1,0 +1,125 @@
+﻿@model Book
+@{
+    ViewData["Title"] = "Add book";
+}
+
+<div class="create-book-global-container container-fluid">
+    <div class="create-book-container row">
+        <div class="col-sm-10 offset-1 mx-0 my-1 p-0">
+            @* Header container *@
+            <div class="create-book-header-container row">
+                <div class="create-book-title-back col-sm-12 col-md-10 col-lg-8">
+                    @* Header text *@
+                    <h3 class="title m-0 p-0">Add book</h3>
+
+                    @* Header add book button *@
+                    <a class="btn btn-primary text-white m-0 p-0" asp-controller="Book" asp-action="BooksList">
+                        <i class="fas fa-arrow-left mx-2"></i> Books List
+                    </a>
+                </div>
+            </div>
+
+            @* Books input form container *@
+            <div class="form-container row">
+                <form method="post" asp-controller="Book" asp-action="CreateBook" class="form col-sm-12 col-md-10 offset-1 bg-dark">
+                    <div class="p-3">
+                        @* Accesses the validation information in the model *@
+                        <div asp-validation-summary="ModelOnly" class="text-warning"></div>
+
+                        <div class="row">
+                            <div class="col-10 offset-1">
+                                @* Book title *@
+                                <div class="form-group row">
+                                    <div class="book-title col-sm-12 col-md-4">
+                                        <label asp-for="Title" class="title"></label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <input asp-for="Title" class="form-control" />
+                                        @* Print validation message *@
+                                        <span asp-validation-for="Title" class="text-warning"></span>
+                                    </div>
+                                </div>
+
+                                @*  Book author *@
+                                <div class="form-group row">
+                                    <div class="book-author col-sm-12 col-md-4">
+                                        <label asp-for="Author" class="author"></label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <input asp-for="Author" class="form-control" />
+                                        @* Print Validation message *@
+                                        <span asp-validation-for="Author" class="text-warning"></span>
+                                    </div>
+                                </div>
+
+                                @* Book genre *@
+                                <div class="form-group row">
+                                    <div class="book-genre col-sm-12 col-md-4">
+                                        <label asp-for="Genre" class="genre"></label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <input asp-for="Genre" class="form-control" />
+                                        @* Print Validation message *@
+                                        <span asp-validation-for="Genre" class="text-warning"></span>
+                                    </div>
+                                </div>
+
+                                @* Book price *@
+                                <div class="form-group row">
+                                    <div class="book-price col-sm-12 col-md-4">
+                                        <label asp-for="Price" class="price"></label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <input asp-for="Price" class="form-control" />
+                                        @* Print Validation message *@
+                                        <span asp-validation-for="Price" class="text-warning"></span>
+                                    </div>
+                                </div>
+
+                                @* Book cover image *@
+                                <div class="form-group row">
+                                    <div class="book-cover-img col-sm-12 col-md-4">
+                                        <label asp-for="CoverImg" class="cover-img"></label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <input asp-for="CoverImg" class="form-control" />
+                                        @* Print Validation message *@
+                                        <span asp-validation-for="CoverImg" class="text-warning"></span>
+                                    </div>
+                                </div>
+
+                                @* Book synopsis *@
+                                <div class="form-group row">
+                                    <div class="book-synopsis col-sm-12 col-md-4">
+                                        <label asp-for="Synopsis" class="synopsis"></label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <textarea asp-for="Synopsis" class="form-control"></textarea>
+                                        @* Print Validation message *@
+                                        <span asp-validation-for="Synopsis" class="text-warning"></span>
+                                    </div>
+                                </div>
+
+                                @* Submit and reset button *@
+                                <div class="btn-container form-group row">
+                                    <div class="button">
+                                        <input type="submit" class="btn btn-success" value="Add" />
+                                    </div>
+                                    <div class="button">
+                                        <input type="reset" class="btn btn-danger" value="Reset" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

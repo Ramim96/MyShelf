@@ -1,0 +1,175 @@
+﻿/* Home */
+div.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+}
+
+div.welcome p.home-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+    padding: 0 2%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+div.welcome p.home-paragraph {
+    margin: 2% 0;
+    padding: 0 3%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+div.welcome div.tutorial-info-container {
+    margin: 10% auto;
+    padding: 0 5%;
+    border-radius: 5px;
+    width: 95%;
+}
+
+div.tutorial-info-container p.info-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0;
+    padding: 0 2%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+div.tutorial-info-container p.info-paragraph {
+    margin: 5% 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
+
+div.welcome div.tutorial-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 2%;
+    width: 100%;
+}
+
+div.tutorial-cards-container div.tutorial-card {
+    margin: 2% 0;
+    padding: 0 5%;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    text-overflow: clip;
+}
+
+div.tutorial-card p.book-label {
+    margin: 2% 0 0 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(51, 204, 51);
+}
+
+div.tutorial-card p.book-data {
+    margin: 0 0 3% 0;
+    padding: 0;
+    text-overflow: clip; 
+    word-wrap: break-word;
+    color: rgb(255, 255, 255);
+}
+
+/* Media queries */
+@media only screen and (min-width: 576px) {
+    /* Home */
+    div .welcome p.home-heading {
+        margin: 5% 0;
+    }
+
+    div.welcome p.home-paragraph {
+        margin: 2% 0;
+        padding: 0 5%;
+    }
+
+    div.tutorial-info-container p.info-paragraph {
+        margin: 3% 0;
+    }
+
+    div.welcome div.tutorial-info-container {
+        margin: 5% auto;
+        width: 85%;
+    }
+
+    div.welcome div.tutorial-cards-container {
+        padding: 0;
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Home */
+    div.welcome p.home-paragraph {
+        margin: 1% 0;
+    }
+
+    div.welcome div.tutorial-cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.tutorial-cards-container div.tutorial-card {
+        margin: 2% 4%;
+    }
+
+    div.tutorial-card p.book-label {
+        margin: 2% 0 0 0;
+    }
+
+    div.tutorial-card p.book-data {
+        margin: 0 0 1% 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Home */
+    div.welcome p.home-paragraph {
+        margin: 1% 0;
+    }
+
+    div.welcome div.tutorial-info-container {
+        padding: 0 3%;
+    }
+
+    div.tutorial-info-container p.info-heading {
+        margin: 2% 0;
+    }
+
+    div.tutorial-info-container p.info-paragraph {
+        margin: 2% 0;
+    }
+
+    div.welcome div.tutorial-info-container {
+        margin: 2% auto;
+    }
+
+    div.tutorial-cards-container div.tutorial-card {
+        padding: 0 3%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
+}

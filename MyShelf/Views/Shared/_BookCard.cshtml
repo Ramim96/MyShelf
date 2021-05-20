@@ -1,0 +1,35 @@
+﻿@model Book
+
+@* Book card container *@
+<div class="card-container bg-dark">
+    <div class="thumbnail">
+        @* Book cover image *@
+        <img class="img-cover d-block" src="@Model.CoverImg" alt="@Model.Title">
+
+        @* Book details *@
+        <div class="caption">
+            @* Book title *@
+            <div class="book-title-container row col-12">
+                <p class="title text-white text-center">@Model.Title</p>
+            </div>
+
+            @* Book details link *@
+            <div class="book-details-link-container row col-12">
+                <a asp-controller="Book" asp-action="BookDetails" asp-route-bookId="@Model.Id" class="details btn btn-warning text-dark text-center">See details</a>
+            </div>
+
+            @* Edit and Delete buttons *@
+            <div class="btn-container row col-11 offset-1">
+                @* Edit button *@
+                <div class="col-6 d-flex justify-content-center align-content-center">
+                    <a asp-controller="Book" asp-action="EditBook" asp-route-bookId="@Model.Id" class="btn btn-primary">Edit</a>
+                </div>
+
+                @* Delete button *@
+                <div class="col-6 d-flex justify-content-center align-content-center">
+                    <a asp-controller="Book" asp-action="DeleteBook" asp-route-bookId="@Model.Id" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

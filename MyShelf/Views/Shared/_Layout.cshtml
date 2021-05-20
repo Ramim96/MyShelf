@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyShelf</title>
+    @* Font Awesome *@
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+          crossorigin="anonymous" />
+
+    @* Google Fonts *@
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    @* CSS *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/content/main.css" />
+    <link rel="stylesheet" href="~/content/home.css" />
+    <link rel="stylesheet" href="~/content/privacy.css" />
+    <link rel="stylesheet" href="~/content/book.css" />
+    <link rel="stylesheet" href="~/content/details.css" />
+    <link rel="stylesheet" href="~/content/create.css" />
+    <link rel="stylesheet" href="~/content/edit.css" />
+    <link rel="stylesheet" href="~/content/delete.css" />
+</head>
+
+<body>
+    <header>
+        @* Navbar *@
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand text-warning" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="brand-logo" src="~/images/logo.png" alt="Community" />
+                    MyShelf
+                </a>
+                <button class="navbar-toggler mx-2" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 text-center bg-dark">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Book" asp-action="BooksList">Books List</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    @* Main content *@
+    <div role="main" class="main-content">
+        @RenderBody()
+    </div>
+
+    @* Footer *@
+    <footer class="footer border-top bg-dark">
+        <p class="footer-paragraph text-white">
+            &copy; 2021 - MyShelf - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="m-0 p-0 text-warning">Privacy</a>
+        </p>
+    </footer>
+
+    @* Scripts *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

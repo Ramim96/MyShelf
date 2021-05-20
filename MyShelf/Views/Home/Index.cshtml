@@ -1,0 +1,312 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="welcome col-12">
+    <p class="home-heading display-4 text-center">Welcome to the MyShelf Web Application</p>
+    <p class="home-paragraph">In this application you can perform CRUD operations, based on insert, edit, retrieve, and delete a book.</p>
+    <p class="home-paragraph">It has been created with ASP.NET core, following an MVC pattern, and uses a single table/relation database</p>
+
+    <div class="tutorial-info-container col-12 bg-dark">
+        <p class="info-heading display-4 text-center text-warning">External sources</p>
+        <p class="info-paragraph">
+            An ideal resource to consult to find the info about books is <a href="https://openlibrary.org" target="_blank">openlibrary.org</a>.
+            <br />
+            <br />
+            Find the book, open the link and use the details to fill up the application form.
+            <br />
+            <br />
+            To input the book cover, use the same site, find the book, open it and open the cover image in a new tab, then copy and paste the URL link in the 
+            dedicated input field.
+        </p>
+    </div>
+
+    <div class="tutorial-info-container col-12 bg-dark">
+        <p class="info-heading display-4 text-center text-warning">Tutorial Info</p>
+        <p class="info-paragraph">1. Below you will find all the sample data to use to interact with the application</p>
+        <p class="info-paragraph">2. I would suggest to duplicate the current page in a new tab to see the sample data</p>
+        <p class="info-paragraph">3. Just copy and paste the data in the input fields</p>
+        <p class="info-paragraph">4. Make sure the leading and trailing white spaces are removed while inserting data</p>
+    </div>
+
+    <div class="tutorial-cards-container col-sm-12">
+        @* Mokingjay *@
+        <div class="tutorial-card col-sm-12 bg-dark">
+            @* Title *@
+            <p class="book-label">Title</p>
+            <p class="book-data">Mokingjay</p>
+
+            @* Author *@
+            <p class="book-label">Author</p>
+            <p class="book-data">Suzanne Collins</p>
+
+            @* Genre *@
+            <p class="book-label">Genre</p>
+            <p class="book-data">Fiction, Adventure</p>
+
+            @* Price *@
+            <p class="book-label">Price</p>
+            <p class="book-data">9.99£</p>
+
+            @* Book cover link *@
+            <p class="book-label">Book cover</p>
+            <p class="book-data">https://ramim96.github.io/Images/Mokingjay.jpg</p>
+
+            @* Synopsis *@
+            <p class="book-label">Synopsis</p>
+            <p class="book-data">
+                Mockingjay is the 3rd and final book of the Huger Games Trilogy by Suzanne Collins.
+                It starts off with a sudden discovery of District 13, that was thought to be destroyed.
+                The district’s “mockingjay” Katniss becomes the face of the rebellion against the evil capital and it’s leader President Snow, but that is not where her struggles end.
+                Her love interest Peeta, had been captured by the capital and now she must undo the brainwashing he endured.
+                The plot thickens when her best friend growing up, Gale, admits his jealousy of Peeta’s relationship.
+                Will she chose Peeta or Gale? Will she win the war against the capital? Read the book to find out!
+            </p>
+        </div>
+
+        @* The Da Vinci Code *@
+        <div class="tutorial-card col-sm-12 bg-dark">
+            @* Title *@
+            <p class="book-label">Title</p>
+            <p class="book-data">The Da Vinci code</p>
+
+            @* Author *@
+            <p class="book-label">Author</p>
+            <p class="book-data">Dan Brown</p>
+
+            @* Genre *@
+            <p class="book-label">Genre</p>
+            <p class="book-data">Fiction, Thriller, Mystery</p>
+
+            @* Price *@
+            <p class="book-label">Price</p>
+            <p class="book-data">8.50£</p>
+
+            @* Book cover link *@
+            <p class="book-label">Book cover</p>
+            <p class="book-data">https://ramim96.github.io/Images/TheDaVinciCode.jpg</p>
+
+            @* Synopsis *@
+            <p class="book-label">Synopsis</p>
+            <p class="book-data">
+                Robert Langdon, professor of religious symbology at Harvard, is in Paris to give a lecture.
+                At the reception that follows, he is scheduled to meet with a revered curator from the world-famous Louvre museum.
+                But the curator never shows up, and later that night Langdon is awakened by authorities and told that the curator has been found dead.
+                He is then taken to the Louvre--the scene of the crime--where he finds out that baffling clues have been left behind.
+            </p>
+        </div>
+
+        @* The Girl With The Dragon Tattoo *@
+        <div class="tutorial-card col-sm-12 bg-dark">
+            @* Title *@
+            <p class="book-label">Title</p>
+            <p class="book-data">The girl with the dragon tattoo</p>
+
+            @* Author *@
+            <p class="book-label">Author</p>
+            <p class="book-data">Stieg Larsson</p>
+
+            @* Genre *@
+            <p class="book-label">Genre</p>
+            <p class="book-data">Fiction, Crime</p>
+
+            @* Price *@
+            <p class="book-label">Price</p>
+            <p class="book-data">12.99£</p>
+
+            @* Book cover link *@
+            <p class="book-label">Book cover</p>
+            <p class="book-data">https://ramim96.github.io/Images/TheGirlWithTheDragonTattoo.jpg</p>
+
+            @* Synopsis *@
+            <p class="book-label">Synopsis</p>
+            <p class="book-data">
+                Facing prison time for libel, discredited journalist Mikael Blomkvist is hired by a reclusive industrialist to investigate an unresolved family disappearance.
+                Aided by the mysterious computer hacker, Lisbeth Salander, the two soon discover a brutal trail of murder, deception and dark secrets.
+            </p>
+        </div>
+
+        @* The Lion, The Witch and The Wardrobe *@
+        <div class="tutorial-card col-sm-12 bg-dark">
+            @* Title *@
+            <p class="book-label">Title</p>
+            <p class="book-data">The Lion, the witch and the Wardrobe</p>
+
+            @* Author *@
+            <p class="book-label">Author</p>
+            <p class="book-data">Clive S Lewis</p>
+
+            @* Genre *@
+            <p class="book-label">Genre</p>
+            <p class="book-data">Fiction, Adventure, Fantasy</p>
+
+            @* Price *@
+            <p class="book-label">Price</p>
+            <p class="book-data">8.99£</p>
+
+            @* Book cover link *@
+            <p class="book-label">Book cover</p>
+            <p class="book-data">https://ramim96.github.io/Images/TheLionTheWitchAndTheWardrobe.jpg</p>
+
+            @* Synopsis *@
+            <p class="book-label">Synopsis</p>
+            <p class="book-data">
+                Four children – Lucy, Peter, Susan and Edmund all enter Narnia – a magical world where animals talk and the White Witch who reigns as Queen makes it always winter and never Christmas.
+                They enter at different times, but from the same place – the old Wardrobe.
+                Lucy enters first and encounters the Faun who is in the pay of the White Witch and tries to kidnap her.
+                Edmund, who enters second, finds the White Witch and thinks she's kind and caring, only to later discover that she is a cruel, evil and untrustworthy woman.
+                Susan and Peter enter together and find Lucy and Edmund.
+                They all meet Mr. and Mrs. Beaver who invites them to lunch at their cottage.
+                During lunch they realize that Edmund (who had fought and was angry with the other three) had left to join forces with the White Witch whom he believed would make him Prince.
+                The Beavers along with the three children set off on a long and perilous journey to find Aslan – the King and Lord of Narnia – and rescue Edmund.
+                Together, the children join forces with Aslan's army against the heartless and wicked White Witch.
+            </p>
+        </div>
+
+        @* Keep Sharp *@
+        <div class="tutorial-card col-sm-12 bg-dark">
+            @* Title *@
+            <p class="book-label">Title</p>
+            <p class="book-data">Keep sharp</p>
+
+            @* Author *@
+            <p class="book-label">Author</p>
+            <p class="book-data">Sanjay Gupta</p>
+
+            @* Genre *@
+            <p class="book-label">Genre</p>
+            <p class="book-data">Science</p>
+
+            @* Price *@
+            <p class="book-label">Price</p>
+            <p class="book-data">10.00£</p>
+
+            @* Book cover link *@
+            <p class="book-label">Book cover</p>
+            <p class="book-data">https://ramim96.github.io/Images/KeepSharp.jpg</p>
+
+            @* Synopsis *@
+            <p class="book-label">Synopsis</p>
+            <p class="book-data">
+                Throughout our lives, we are always looking for ways to keep our mind sharp and effortlessly productive.
+                In this book, globetrotting neurosurgeon Dr Sanjay Gupta offers insights from top scientists all over the world,
+                whose cutting edge research can help you heighten and protect brain function and maintain cognitive health at any age.
+                Keep Sharp debunks common myths about ageing and cognitive decline, explores whether there's a 'best' diet or exercise regimen for the brain,
+                and explains whether it's healthier to play video games that test memory and processing speed, or to engage in more social interaction.
+            </p>
+        </div>
+
+        @* War and Peace *@
+        <div class="tutorial-card col-sm-12 bg-dark">
+            @* Title *@
+            <p class="book-label">Title</p>
+            <p class="book-data">War and Peace</p>
+
+            @* Author *@
+            <p class="book-label">Author</p>
+            <p class="book-data">Leo Tolstoy</p>
+
+            @* Genre *@
+            <p class="book-label">Genre</p>
+            <p class="book-data">Historical novel</p>
+
+            @* Price *@
+            <p class="book-label">Price</p>
+            <p class="book-data">15.00£</p>
+
+            @* Book cover link *@
+            <p class="book-label">Book cover</p>
+            <p class="book-data">https://ramim96.github.io/Images/WarAndPeace.jpg</p>
+
+            @* Synopsis *@
+            <p class="book-label">Synopsis</p>
+            <p class="book-data">
+                The novel spans the period from 1805 to 1820.
+                The era of Catherine the Great was still fresh in the minds of older people.
+                Catherine had made French the language of her royal court.
+                For the next 100 years, it became a social requirement for the Russian nobility to speak French and understand French culture.
+                The historical context of the novel begins with the execution of Louis Antoine, Duke of Enghien in 1805, while Russia is ruled by Alexander I during the Napoleonic Wars.
+                Key historical events woven into the novel include the Ulm Campaign, the Battle of Austerlitz, the Treaties of Tilsit, and the Congress of Erfurt.
+                Tolstoy also references the Great Comet of 1811 just before the French invasion of Russia.
+                Tolstoy then uses the Battle of Ostrovno and the Battle of Shevardino Redoubt in his novel, before the occupation of Moscow and the subsequent fire.
+                The novel continues with the Battle of Tarutino, the Battle of Maloyaroslavets, the Battle of Vyazma, and the Battle of Krasnoi.
+                The final battle cited is the Battle of Berezina, after which the characters move on with rebuilding Moscow and their lives.
+            </p>
+        </div>
+
+        @* The Great Gatsby *@
+        <div class="tutorial-card col-sm-12 bg-dark">
+            @* Title *@
+            <p class="book-label">Title</p>
+            <p class="book-data">The Great Gatsby</p>
+
+            @* Author *@
+            <p class="book-label">Author</p>
+            <p class="book-data">F. Scott Fitzgerald</p>
+
+            @* Genre *@
+            <p class="book-label">Genre</p>
+            <p class="book-data">Romance</p>
+
+            @* Price *@
+            <p class="book-label">Price</p>
+            <p class="book-data">20.29£</p>
+
+            @* Book cover link *@
+            <p class="book-label">Book cover</p>
+            <p class="book-data">https://ramim96.github.io/Images/TheGreatGatsby.jpg</p>
+
+            @* Synopsis *@
+            <p class="book-label">Synopsis</p>
+            <p class="book-data">
+                Following the shock and chaos of World War I,
+                American society enjoyed unprecedented levels of prosperity during the "roaring" 1920s as the economy soared.
+                At the same time, Prohibition, the ban on the sale and manufacture of alcohol as mandated by the Eighteenth Amendment,
+                made millionaires out of bootleggers and led to an increase in organized crime, for example the Jewish mafia.
+            </p>
+        </div>
+
+        @* Moby Dick *@
+        <div class="tutorial-card col-sm-12 bg-dark">
+            @* Title *@
+            <p class="book-label">Title</p>
+            <p class="book-data">Moby Dick</p>
+
+            @* Author *@
+            <p class="book-label">Author</p>
+            <p class="book-data">Herman Melville</p>
+
+            @* Genre *@
+            <p class="book-label">Genre</p>
+            <p class="book-data">Adventure</p>
+
+            @* Price *@
+            <p class="book-label">Price</p>
+            <p class="book-data">10.40£</p>
+
+            @* Book cover link *@
+            <p class="book-label">Book cover</p>
+            <p class="book-data">https://ramim96.github.io/Images/MobyDick.jpg</p>
+
+            @* Synopsis *@
+            <p class="book-label">Synopsis</p>
+            <p class="book-data">
+                The ship’s captain is Ahab, who Ishmael and his friend Queequeg soon learn is losing his mind. Starbuck, Ahab’s first-mate, recognizes this problem too,
+                and is the only one throughout the novel to voice his disapproval of Ahab’s increasingly obsessive behavior.
+                This nature of Ahab’s obsession is first revealed to Ishmael and Queequeg after the Pequod’s owners, Peleg and Bildad,
+                explain to them that Ahab is still recovering from an encounter with a large whale that resulted in the loss of his leg.
+                That whale’s name is Moby Dick.
+                The Pequod sets sail, and the crew is soon informed that this journey will be unlike their other whaling missions: this time,
+                despite the reluctance of Starbuck, Ahab intends to hunt and kill the beastly Moby Dick no matter the cost.
+                Ahab and the crew continue their eventful journey and encounter a number of obstacles along the way.
+                Queequeg falls ill, which prompts a coffin to be built in anticipation of the worst.
+                After he recovers, the coffin becomes a replacement lifeboat that eventually saves Ishmael’s life.
+                Ahab receives a prophecy from a crew member informing him of his future death, which he ignores.
+                Moby Dick is spotted and, over the course of three days, engages violently with Ahab and the Pequod until the whale destroys the ship,
+                killing everyone except Ishmael.
+                Ishmael survives by floating on Queequeg’s coffin until he is picked up by another ship, the Rachel.
+                The novel consists of 135 chapters, in which narrative and essayistic portions intermingle, as well as an epilogue and front matter.
+            </p>
+        </div>
+    </div>
+</div>
